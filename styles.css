@@ -1,3 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body,html{
+    height: 100%;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Noto Sans Mono', monospace;
+}
+
+:root{
+    --primary-color : #046776;
+    --width-break : 700px;
+}
+
+#header{
+    text-align: center;
+    padding: 1rem;
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+#container{
+    height: auto;
+    width: 100%;
+    max-width: var(--width-break);
+    margin: auto;
+    padding: 2rem;
+}
+
 .lbl-for-inputs{
     display: block;
+    margin: 1rem auto 1rem;
+    justify-content: center;
+    font-size: larger;
+    font-weight: bolder;
+}
+
+.inputs-for-stocks{
+    display: block;
+    margin: 1rem auto 1rem;
+    width: 100%;
+    max-width: 250px;
+    border: 1.5px solid var(--primary-color);
+    outline: #fff;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    font-size: 14px;
+}
+
+#tell-me-btn{
+    display: block;
+    margin: 1rem auto 1rem;
+    background-color: var(--primary-color);
+    width: 200px;
+    height: 2.5rem;
+    border: none;
+    font-size: large;
+    border-radius: 0.5rem;
+    box-shadow: 0 5px 5px black;
+    cursor: pointer;
+}
+
+#tell-me-btn:hover{
+    font-weight: bolder;
+}
+
+#footer{
+    display: block;
+    height: auto;
+    text-align: center;
+    /*color: var(--primary-color);*/
+    background-color: var(--primary-color);
+    padding-top: 0.5rem;
+    font-family: 'Noto Sans Mono', monospace;
+}
+
+#footer h3{
+    font-size: large;
+    text-align: center;
+    text-transform: capitalize;
+    
+}
+
+a,img,li{
+    display: inline;
+}
+
+img{
+    width: 40px;
+    padding: 1rem 0.2rem;
+}
+
+#output-container{
+    font-weight: bolder;
+    font-size: larger;
+    margin: 1rem 0 0;
+    font-family: 'Noto Sans Mono', monospace;
 }

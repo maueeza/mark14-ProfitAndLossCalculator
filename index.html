@@ -8,23 +8,39 @@
     <link href="/styles.css" rel="stylesheet">
 </head>
 <body>
-    <h1>Stock Profit or Loss App</h1>
+    <h1 id="header">Stock Profit or Loss App</h1>
     <div id="container">
         <label for="init-stock-price" class="lbl-for-inputs">
             Initial Stock Price:
-            <input type="text" id="init-stock-price" placeholder="Enter Initial stock price here">
+            <input type="text" id="init-stock-price" class="inputs-for-stocks" placeholder="Enter Initial stock price here">
         </label>
         <label for="qty-stocks" class="lbl-for-inputs">
             Quantity of Stocks :
-            <input type="text" id="qty-stocks" placeholder="Enter the quantity of stocks here">
+            <input type="text" id="qty-stocks" class="inputs-for-stocks" placeholder="Enter the quantity of stocks here">
         </label>
         <label for="curr-stock-price" class="lbl-for-inputs">
             Current stock price : 
-            <input type="text" id="curr-stock-price" placeholder="Enter current stock price">
+            <input type="text" id="curr-stock-price" class="inputs-for-stocks" placeholder="Enter current stock price">
         </label>
         <button id="tell-me-btn">Tell Me!</button>
         <div id="output-container" class="output"></div>
     </div>
+    <footer id="footer">
+        <div class="footer-content">
+            <h3>copyright &copy;2022 | maueeza bhatkar</h3>
+            <ul class="list-non-bullets">
+                <li>
+                    <a href="https://github.com/maueeza"><img src="/icons8-github.svg"></a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/maueeza"><img src="/icons8-twitter.svg"></a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/maueeza-bhatkar-6277a4191/"><img src="/icons8-linkedin-circled.svg"></a>
+                </li>
+            </ul>
+        </div>
+    </footer>
 </body>
 <script src="/mark14Functionality.js" type="text/javascript"></script>
 </html>
