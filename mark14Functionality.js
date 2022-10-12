@@ -22,14 +22,16 @@ function calculateProfitAndLoss()
     var qtyStocksValue = Number(qtyStocks.value);
     console.log("qtyStocksValue : ",qtyStocksValue);
 
+    var totalInitialValue = initialPriceValue * qtyStocksValue;
+
     if(initialPriceValue > currPriceValue)
     {
         //loss logic
-        var loss = (initialPriceValue - currPriceValue)*qtyStocksValue;
-        console.log("loss : "+loss+", typeof loss : ",typeof loss);
-        var lossPercentage = Math.round((loss/initialPriceValue)*100);
+        var totalLoss = (initialPriceValue - currPriceValue)*qtyStocksValue;
+        console.log("loss : "+totalLoss+", typeof loss : ",typeof loss);
+        var lossPercentage = Math.round((totalLoss/totalInitialValue)*100);
         console.log("lossPercentage : "+lossPercentage);
-        var message = "Hey the loss is : "+loss+" and the loss percentage is : "+lossPercentage+"%";
+        var message = "Hey the loss is : "+totalLoss+" and the loss percentage is : "+lossPercentage+"%";
         showMessage(message);
 
 
@@ -37,11 +39,12 @@ function calculateProfitAndLoss()
     else if(currPriceValue > initialPriceValue)
     {
         //profit logic
-        var profit = (currPriceValue - initialPriceValue)*qtyStocksValue;
-        console.log("Profit : "+profit+", typeof profit : ", typeof profit);
-        var profitPercentage = Math.round((profit/initialPriceValue)*100);
+        var totalProfit = (currPriceValue - initialPriceValue)*qtyStocksValue;
+        
+        console.log("Profit : "+totalProfit+", typeof profit : ", typeof profit);
+        var profitPercentage = Math.round((totalProfit/totalInitialValue)*100);
         console.log("profitPercentage : "+profitPercentage);
-        var message = "Hey the profit is : "+profit+" and the profit percentage is : "+profitPercentage+"%";
+        var message = "Hey the profit is : "+totalProfit+" and the profit percentage is : "+profitPercentage+"%";
         showMessage(message);
     }
     else
